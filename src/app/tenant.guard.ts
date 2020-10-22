@@ -23,7 +23,7 @@ export class TenantGuard implements CanActivate {
     const name = route.paramMap.get('name');
     console.log('guarding tenant with name ' + name);
 
-    if(name === 'joe'){
+    if (name === 'joe'){
       this.router.navigate(['../invalid-tenant']);
     }
 

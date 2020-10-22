@@ -16,7 +16,7 @@ import { ModuleOneModule } from './module-one/module-one.module';
   ],
   imports: [
     BrowserModule,
-    //ModuleOneModule,
+    // ModuleOneModule,
     AppRoutingModule
   ],
   providers: [],

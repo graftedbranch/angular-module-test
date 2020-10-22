@@ -12,7 +12,7 @@ export class CompOneComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-      this.route.paramMap.subscribe((params)=>{
+      this.route.paramMap.subscribe((params) => {
         const name = params.get('name');
 
         console.log('name is ' + name);

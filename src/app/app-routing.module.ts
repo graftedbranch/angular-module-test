@@ -8,6 +8,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 const routes: Routes = [
   { path: 'deets', component: AppDeetsComponent},
   { path: 'invalid-tenant', component: InvalidTenantComponent},
+  { path: 'mtwo', loadChildren: () => import('./mtwo/mtwo.module').then((m) => m.MtwoModule) },
   { path: '', loadChildren: () => import('./module-one/module-one.module').then((m) => m.ModuleOneModule) },
   { path: '**', component: PageNotFoundComponent }
 ];
